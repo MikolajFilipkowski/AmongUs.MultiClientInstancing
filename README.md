@@ -1,28 +1,35 @@
 # AmongUs.MultiClientInstancing
 
+**Shoutout to MyDragonBreath for creating the original mod!**
+
+## Description
 I think the best way to describe this is as a method of host testing what your "mod" could look like with multiple clients.
 It is in no way a replacement for testing your mod and has a complete disregard for rpc calls.
 It can also be buggy with different mods differently depending on how they interact with amongus - so chances are its not going to be perfect.
 Think of this as more like a ease-of-access utility then a standlone testing environment.
 
-Whilst in lobby press f5 to add players,
-press f6 to toggle between keeping or losing bots between games,
-and in game press f9 to move up or f10 to move down through the id list.
-You can press f11 to remove all bots.
+## Controls
+Whilst in lobby press **F5** to add bots<br>
+Press **F6** to toggle between keeping or losing bots between games<br>
+**Left bracket** to move down or **right bracket** to move up through the id list<br>
+Press **F11** to remove all bots.
 
-i've left it openended for any future features but i dont think i can see myself regularly maintaning this beyond bug fixes,
-but your welcome to pr and contribute
+## Disclaimer
+**IMPORTANT** <br>
+The mod is not designed to be the end all for testing - so expect some things not to work - please read the source to understand how this works. <br>
+Relies on [BepInEx](https://github.com/BepInEx/BepInEx)
 
-The mod is not designed to be the end all for testing - so expect some things not to work - please read the source to understand how this works.
-
-(note this is older footage as i've now got a system in place to remove the extra buttons from tou)
+## Preview
 
 https://user-images.githubusercontent.com/38029594/182777865-2ec28bfb-4815-41f4-9936-4e4a2fc8b713.mp4
 
-Relies on Bepinex
+*(note this is older footage as i've now got a system in place to remove the extra buttons from tou)*
+
+## Releases
 
 | Among Us Version | Download |
 |----------|-------------|
+| v2023.6.13 | [v0.0.6](https://github.com/MikolajFilipkowski/AmongUs.MultiClientInstancing/releases/tag/v0.0.6)
 | v2023.2.28 | [v0.0.5](https://github.com/MyDragonBreath/AmongUs.MultiClientInstancing/releases/tag/v0.0.5)
 | v2022.12.14 | [v0.0.4](https://github.com/MyDragonBreath/AmongUs.MultiClientInstancing/releases/tag/v0.0.4)
 | v2022.6.21 & v2022.7.12 | [v0.0.2](https://github.com/MyDragonBreath/AmongUs.MultiClientInstancing/releases/tag/v0.0.2)
@@ -30,6 +37,13 @@ Relies on Bepinex
 
 <details>
   <summary> Changelog </summary>
+  <details>
+  <summary> v0.0.6 </summary>
+  <ul>
+    <li> Changed F9 and F10 keys to left and right brackets </li>
+    <li> Changed robots' names </li>
+  </ul>
+  </details>
   <details>
   <summary> v0.0.5 </summary>
   <ul>
@@ -44,15 +58,13 @@ Relies on Bepinex
   <ul>
     <li> Updated to latest version, fixed bugs </li>
     <li> Added update warner </li>
-    <li> Big thanks to twix who has released me from the basement in exchange for me finally returning to this mod </li>
-    <li> Removed Reactor, excess uranium will be sold to prolong my time outside of the basement</li>
+    <li> Removed Reactor</li>
   </ul>
   </details>
   <details>
   <summary> v0.0.2 </summary>
   <ul>
     <li> Added clamps, and system to remove TOU buttons </li>
-    <li> please save me twix has me locked in basement </li>
   </ul>
   </details>
   <details>
