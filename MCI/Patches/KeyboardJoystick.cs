@@ -15,17 +15,17 @@ namespace MCI.Patches
                 controllingFigure = PlayerControl.LocalPlayer.PlayerId;
                 if (PlayerControl.AllPlayerControls.Count == 15 && !Input.GetKeyDown(KeyCode.F6)) return; //press f6 and f5 to bypass limit
                 Utils.CleanUpLoad();
-                Utils.CreatePlayerInstance("Robot");
+                Utils.CreatePlayerInstance("Bot");
             }
 
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKeyDown(KeyCode.LeftBracket))
             {
                 controllingFigure--;
                 controllingFigure = Mathf.Clamp(controllingFigure, 0, PlayerControl.AllPlayerControls.Count - 1);
                 InstanceControl.SwitchTo((byte)controllingFigure);
             }
 
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetKeyDown(KeyCode.RightBracket))
             {
                 controllingFigure++;
                 controllingFigure = Mathf.Clamp(controllingFigure, 0, PlayerControl.AllPlayerControls.Count - 1);

@@ -17,7 +17,7 @@ namespace MCI
         {
             HttpClient http = new HttpClient();
             http.DefaultRequestHeaders.Add("User-Agent", "MCI-Agent");
-            var response = await http.GetAsync(new System.Uri("https://api.github.com/repos/MyDragonBreath/AmongUs.MultiClientInstancing/releases/latest"), HttpCompletionOption.ResponseContentRead);
+            var response = await http.GetAsync(new System.Uri("https://api.github.com/repos/MikolajFilipkowski/AmongUs.MultiClientInstancing/releases/latest"), HttpCompletionOption.ResponseContentRead);
 
             if (response.StatusCode != HttpStatusCode.OK || response.Content == null) return false;
  
