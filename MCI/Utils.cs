@@ -30,7 +30,7 @@ namespace MCI
             AmongUsClient.Instance.CreatePlayer(sampleC);
             AmongUsClient.Instance.allClients.Add(sampleC);
 
-            sampleC.Character.SetName(name + $" {{{sampleC.Character.PlayerId}:{sampleId}}}");
+            sampleC.Character.SetName(name + $" {{{sampleC.Character.PlayerId}}}");
             sampleC.Character.SetSkin(HatManager.Instance.allSkins[Random.Range(0, HatManager.Instance.allSkins.Count)].ProdId, 0);
             sampleC.Character.SetColor(Random.Range(0, Palette.PlayerColors.Length));
 

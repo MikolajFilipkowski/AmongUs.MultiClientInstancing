@@ -19,7 +19,7 @@ namespace MCI.Patches
                 " <color=#00ff00FF>[✓]</color>": " <color=#ff0000FF>[X]</color>";
             if (UpdateChecker.needsUpdate) __instance.text.text += " - <color=#ff0000FF>UPDATE AVAILABLE</color>";
             __instance.text.text +=
-                "\n    by MyDragonBreath, whichTwix";
+                "\nby MyDragonBreath, whichTwix, Vexi";
         }
     }
 }

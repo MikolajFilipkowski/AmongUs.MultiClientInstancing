@@ -10,7 +10,7 @@ namespace MCI
     [BepInProcess("Among Us.exe")]
     public partial class MCIPlugin : BasePlugin
     {
-        public const string VersionString = "0.0.5";
+        public const string VersionString = "0.0.6";
         public static System.Version vVersion = new(VersionString);
         public Harmony Harmony { get; } = new(Id);
         public override void Load()
@@ -33,7 +33,7 @@ namespace MCI
     }
 
 
-    [HarmonyPatch(typeof(GameStartManager), nameof(GameStartManager.Update))]
+    /*[HarmonyPatch(typeof(GameStartManager), nameof(GameStartManager.Update))]
     public static class CountdownPatch
     {
         public static void Prefix(GameStartManager __instance)
@@ -41,4 +41,5 @@ namespace MCI
             __instance.countDownTimer = 0;
         }
     }
+    */
 }

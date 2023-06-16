@@ -18,16 +18,16 @@ namespace MCI.Patches
                 Utils.CreatePlayerInstance("Robot");
             }
 
-            if (Input.GetKeyDown(KeyCode.F9))
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                controllingFigure++;
+                controllingFigure--;
                 controllingFigure = Mathf.Clamp(controllingFigure, 0, PlayerControl.AllPlayerControls.Count - 1);
                 InstanceControl.SwitchTo((byte)controllingFigure);
             }
 
-            if (Input.GetKeyDown(KeyCode.F10))
+            if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                controllingFigure--;
+                controllingFigure++;
                 controllingFigure = Mathf.Clamp(controllingFigure, 0, PlayerControl.AllPlayerControls.Count - 1);
                 InstanceControl.SwitchTo((byte)controllingFigure);
             }
